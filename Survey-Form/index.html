@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p>Please feel free to complete this questionnaire before continuing</p>
+    <form id="survey-form" method="post">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="First Last"/>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="exampleemail@gmail.com"/>
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" min="3" max="100" placeholder="25"/>
+        <label for="location" id="location-label">Prefecture</label>
+        <select name="location" id="location">
+            <option value="">--Please choose an option--
+            </option>
+              <option value="Tokyo">Tokyo</option>
+              <option value="Kanagawa">Kanagawa</option>
+              <option value="Saitama">Saitama</option>
+              <option value="Chiba">Chiba</option>
+              <option value="Ibaraki">Ibaraki</option>
+              <option value="Tochigi">Tochigi</option>
+              <option value="Gunma">Gunma</option>
+        </select>
+        <label for="employment" id="employment-label">Employment Status</label>
+        <select name="employment" id="employment">
+            <option value="">--Please choose an option--
+            </option>
+              <option value="Fulltime">Full-time employee</option>
+              <option value="Parttime">Part-time employee</option>
+              <option value="Unemployed">Unemployed</option>
+        </select>
+    </form>
+</html>
