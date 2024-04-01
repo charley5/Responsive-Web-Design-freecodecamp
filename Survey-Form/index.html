@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title">questionnaire</h1>
+    <h1 id="title">Questionnaire</h1>
     <p id="description">Please feel free to complete this questionnaire before continuing</p>
     <form id="survey-form" method="post">
         <label for="name" id="name-label">Name</label>
@@ -36,9 +36,20 @@
         <label for="windows">Windows</label>
         <input type="radio" id="macos" name="os-system" value="macOS"/>
         <label for="macos">MacOS</label>
-        <input type="radio" id="os" name="os-system" value="Linux"/>
+        <input type="radio" id="os" name="os-sytem" value="Linux"/>
         <label for="os">Linux</label>
-        <button type="submit" id="submit">Submit</button>
+        <button type="submit" id="submit">submit</button>
+        <legend>Choose what languages you speak:</legend>
+        <input type="checkbox" id="English" name="English" checked/>
+        <label for="English">English</label>
+        <input type="checkbox" id="Japanese" name="Japanese"/>
+        <label for="Japanese">Japanese</label>
+        <input type="checkbox" id="Other" name="Other"/>
+        <label for="checkbox">Other</label>
+        <label for="information">Please add any other additional information about you:</label>
+        <textarea id="information" name="information" rows="5" cols="33">
+            Add something about yourself...
+        </textarea>
     </form>
 </body>
 </html>
