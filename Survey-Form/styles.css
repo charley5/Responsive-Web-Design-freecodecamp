@@ -25,24 +25,21 @@ p {
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
+textarea,
 select {
-    width: 100%;
+    width: calc(100% - 22px);
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
     margin-right: 5px;
+    transform: translateY(2px);
 }
 
 label {
@@ -64,4 +61,8 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+textarea {
+    resize: none;
 }
