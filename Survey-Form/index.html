@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1 id="title">Questionnaire</h1>
-    <p id="description">Please feel free to complete this questionnaire before continuing</p>
+    <p id="description">
+      Please feel free to complete this questionnaire before continuing
+    </p>
     <form id="survey-form" method="post">
-        <label for="name" id="name-label">Name</label>
-        <input id="name" type="text" placeholder="First Last" required/>
-        <label for="email" id="email-label">Email</label>
-        <input id="email" type="email" placeholder="exampleemail@gmail.com" required/>
-        <label for="number" id="number-label">Age</label>
-        <input id="number" type="number" min="3" max="100" placeholder="25"/>
-        <label for="location" id="location-label">Prefecture</label>
-        <select name="location" id="location">
-            <option value="">--Please choose an option--</option>
-            <option value="Tokyo">Tokyo</option>
-            <option value="Kanagawa">Kanagawa</option>
-            <option value="Saitama">Saitama</option>
-            <option value="Chiba">Chiba</option>
-            <option value="Ibaraki">Ibaraki</option>
-            <option value="Tochigi">Tochigi</option>
-            <option value="Gunma">Gunma</option>
-        </select>
-        <label for="employment" id="dropdown-label">Employment Status</label>
-        <select name="employment" id="dropdown">
-            <option value="">--Please choose an option--</option>
-            <option value="Fulltime">Full-time employee</option>
-            <option value="Parttime">Part-time employee</option>
-            <option value="Unemployed">Unemployed</option>
-        </select>
-        <p>Please select your operating system:</p>
-        <input type="radio" id="windows" name="os-system" value="Windows"/>
-        <label for="windows">Windows</label>
-        <input type="radio" id="macos" name="os-system" value="macOS"/>
-        <label for="macos">MacOS</label>
-        <input type="radio" id="linux" name="os-system" value="Linux"/>
-        <label for="linux">Linux</label>
-        <input type="radio" id="other-os" name="os-system" value="Other"/>
-        <label for="other-os">Other</label>
-        <legend>Choose what languages you speak:</legend>
-        <input type="checkbox" id="English" name="English" value="English" checked/>
-        <label for="English">English</label>
-        <input type="checkbox" id="Japanese" name="Japanese" value="Japanese"/>
-        <label for="Japanese">Japanese</label>
-        <input type="checkbox" id="Other" name="Other" value="Other"/>
-        <label for="Other">Other</label>
-        <label for="information">Please add any other additional information about you:</label>
-        <textarea id="information" name="information" rows="5" cols="33">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="First Last" required />
+      <label for="email" id="email-label">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="exampleemail@gmail.com"
+        required
+      />
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="number" min="3" max="100" placeholder="25" />
+      <label for="location" id="location-label">Prefecture</label>
+      <select name="location" id="location">
+        <option value="">--Please choose an option--</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Kanagawa">Kanagawa</option>
+        <option value="Saitama">Saitama</option>
+        <option value="Chiba">Chiba</option>
+        <option value="Ibaraki">Ibaraki</option>
+        <option value="Tochigi">Tochigi</option>
+        <option value="Gunma">Gunma</option>
+      </select>
+      <label for="employment" id="dropdown-label">Employment Status</label>
+      <select name="employment" id="dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="Fulltime">Full-time employee</option>
+        <option value="Parttime">Part-time employee</option>
+        <option value="Unemployed">Unemployed</option>
+      </select>
+      <p>Please select your operating system:</p>
+      <input type="radio" id="windows" name="os-system" value="Windows" />
+      <label for="windows">Windows</label>
+      <input type="radio" id="macos" name="os-system" value="macOS" />
+      <label for="macos">MacOS</label>
+      <input type="radio" id="linux" name="os-system" value="Linux" />
+      <label for="linux">Linux</label>
+      <input type="radio" id="other-os" name="os-system" value="Other" />
+      <label for="other-os">Other</label>
+      <legend>Choose what languages you speak:</legend>
+      <input
+        type="checkbox"
+        id="English"
+        name="English"
+        value="English"
+        checked
+      />
+      <label for="English">English</label>
+      <input type="checkbox" id="Japanese" name="Japanese" value="Japanese" />
+      <label for="Japanese">Japanese</label>
+      <input type="checkbox" id="Other" name="Other" value="Other" />
+      <label for="Other">Other</label>
+      <label for="information"
+        >Please add any other additional information about you:</label
+      >
+      <textarea id="information" name="information" rows="5" cols="33">
             Add something about yourself...
-        </textarea>
-        <button type="submit" id="submit">Submit</button>
+        </textarea
+      >
+      <button type="submit" id="submit">Submit</button>
     </form>
-</body>
+  </body>
 </html>
